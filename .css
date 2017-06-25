@@ -1,0 +1,62 @@
+body {
+    background-image: url(background.jpg);
+    background-color: rgb(40, 60, 82);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+#wrapper {
+    width: 500px;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(30, 23, 24, 0.9);
+}
+header, nav, main, footer {
+    margin: 10px;
+    padding: 5px;
+    width: 490px;
+}
+header, nav, main, footer {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 3px ridge rgb(65, 51, 39);
+    border-radius: 10px; 
+}
+header {
+    text-align: center;
+}
+header td.pagination {
+    font-size: 4em;
+}
+nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2px;
+    
+}
+nav li {
+    #display: inline;
+}
+nav ul { 
+    margin-top: 4px;
+    margin-bottom: 4px;
+    list-style-type: none;
+    text-align: left;
+    padding: 0px;
+}
+nav a, main a {
+    padding-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(28, 30, 24, 0.9);
+}
+nav a:hover, main a:hover, footer a:hover {
+    text-decoration: none;
+    color: rgba(186, 164, 149, 0.5);
+}
+a:link {
+    text-decoration: none;
+    color: rgba(28, 30, 24, 0.9);
+}
+div.before-footer-img, div.origin-img {
+    text-align: center;
+}
+

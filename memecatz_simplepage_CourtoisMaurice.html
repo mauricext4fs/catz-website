@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSC 110 First Web Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <style>
+        body {
+            background-image: url(background.jpg);
+            background-color: rgb(40, 60, 82);
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+        #wrapper {
+            width: 500px;
+            min-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            color: rgba(30, 23, 24, 0.9);
+        }
+        header, nav, main, footer {
+            margin: 10px;
+            padding: 5px;
+            width: 490px;
+        }
+        header, nav, main, footer {
+            background-color: rgba(255, 255, 255, 0.6);
+            border: 3px ridge rgb(65, 51, 39);
+            
+        }
+        header {
+            text-align: center;
+        }
+        nav {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2px;
+            
+        }
+        nav li {
+            display: inline;
+        }
+        nav ul { 
+            margin-top: 4px;
+            margin-bottom: 4px;
+            list-style-type: none;
+            text-align: center;
+            padding: 0px;
+        }
+        nav a, main a {
+            padding-right: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: rgba(28, 30, 24, 0.9);
+        }
+        nav a:hover, main a:hover, footer a:hover {
+            text-decoration: none;
+            color: rgba(186, 164, 149, 0.5);
+        }
+        a:link {
+            text-decoration: none;
+            color: rgba(28, 30, 24, 0.9);
+        }
+        div.before-footer-img, div.origin-img {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        <h1>Catz Meme Number 1</h1>
+    </header>
+    <nav>
+        <!--<ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catz1.html">Number 1</a></li>
+            <li><a href="catz1.html">Number 2</a></li>
+            <li><a href="catz1.html">Number 3</a></li>
+        </ul>-->
+    </nav>
+    <main>
+        <div class="origin-img"><img src="nyancat.gif" alt="Nyan Cat original Animation"></div>
+        <div name="origin">
+            <h2>Origin / History</h2>
+            <p>On <a href="https://en.wikipedia.org/wiki/Nyan_Cat">Wikipedia</a>it is said that the first public appearance of Nyan Cat was a posting on YouTube in April 2011 from Japan. However, the original creator was 25-year-old Christopher Torres of Dallas, Texas. It rapidly destroyed the internet and became the number 5 most viewed video of YouTube of 2011.</p>
+        </div> 
+        <div name="usage">
+            <h2>Usage</h2>
+            <p>While the Nyan Cat is not a usual template used to create original template in site like 9gag and Imgur it is often seen as profile picture or compound into different meme.</p>
+        </div>
+        <div name="related_links">
+            <h2>External Links</h2>
+            <ol>
+                <li><a href="http://www.nyan.cat/">Nyan counter</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Nyan_Cat">Wikipedia Article about the Nyan Cat</a></li>
+            </ol>
+
+        <div class="before-footer-img"><img src="nyancat2.gif" alt="Nyan Cat Animation"></div>
+        </div> 
+    </main>
+    <footer>
+        <small><i>Copyleft &copy; 2017 <a href="mailto:courtoisninja@gmail.com">Maurice Courtois</a></i></small>
+        <p><small>Last edited on 18 June 2017</small></p>
+    </footer>
+    </div>
+</body>
+</html>
