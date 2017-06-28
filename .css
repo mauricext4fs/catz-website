@@ -11,12 +11,12 @@ body {
     margin-right: auto;
     color: rgba(30, 23, 24, 0.9);
 }
-header, nav, main, footer {
+header, main, footer {
     margin: 10px;
     padding: 5px;
     width: 490px;
 }
-header, nav, main, footer {
+header, main, footer {
     background-color: rgba(255, 255, 255, 0.6);
     border: 3px ridge rgb(65, 51, 39);
     border-radius: 10px; 
@@ -24,13 +24,52 @@ header, nav, main, footer {
 header {
     text-align: center;
 }
-header td.pagination {
-    font-size: 4em;
+header h1 {
+	margin: 0px;
 }
+
+header td.pagination {
+	letter-spacing: -0.2em;
+    font-size: 2em;
+}
+/*
+ * Just a quick hamburger
+ */
+#menuHamburger span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #686565;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuHamburgerContent {
+	display: none;
+}
+
+#menuHamburgerContent li:first-child {
+	padding-left: 1em;
+}
+
 nav {
-    background-color: rgba(255, 255, 255, 0.9);
     padding: 2px;
     
+}
+nav table.header
+{
+	width: 100%;
 }
 nav li {
     #display: inline;
@@ -42,13 +81,18 @@ nav ul {
     text-align: left;
     padding: 0px;
 }
-nav a, main a {
-    padding-right: 10px;
+td.pagination-left, td.pagination-right {
+	width: 20%;
+}
+td.pagination-center {
+	width: 60%;
+}
+nav a, main a, .pagination a {
     text-decoration: none;
     font-weight: bold;
     color: rgba(28, 30, 24, 0.9);
 }
-nav a:hover, main a:hover, footer a:hover {
+nav a:hover, main a:hover, footer a:hover, .pagination a:hover {
     text-decoration: none;
     color: rgba(186, 164, 149, 0.5);
 }
